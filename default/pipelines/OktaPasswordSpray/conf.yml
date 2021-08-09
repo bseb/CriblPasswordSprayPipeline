@@ -1,0 +1,16 @@
+output: default
+groups: {}
+asyncFuncTimeout: 1000
+functions:
+  - id: eval
+    filter: "true"
+    disabled: null
+    conf:
+      add:
+        - name: index
+          value: '"okta"'
+        - name: sourcetype
+          value: '"OktaIM2:log"'
+        - name: source
+          value: '"Okta:IM2"'
+    description: Add Fields to make this work with the Splunk Okta TA
